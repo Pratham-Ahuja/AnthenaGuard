@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cscorner.anthenaguard" android:versionCode="1" android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"> </uses-permission>
+    <application android:allowBackup="true"  android:label="@string/app_name" android:theme="@style/Base.Theme.AnthenaGuard">
+        <activity android:name="com.cscorner.anthenaguard.MainActivity" android:exported="true" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cscorner.anthenaguard.Register"  android:parentActivityName="com.cscorner.anthenaguard.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.cscorner.anthenaguard.MainActivity"/>
+        </activity>
+        <activity android:name="com.cscorner.anthenaguard.Display"  android:parentActivityName="com.cscorner.anthenaguard.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.cscorner.anthenaguard.MainActivity"/>
+        </activity>
+        <activity android:name="com.cscorner.anthenaguard.Instructions"  android:parentActivityName="com.cscorner.anthenaguard.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.cscorner.anthenaguard.MainActivity"/>
+        </activity>
+        <activity android:name="com.cscorner.anthenaguard.Verify"  android:parentActivityName="com.cscorner.anthenaguard.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.cscorner.anthenaguard.MainActivity"/>
+        </activity>
+    </application>
+</manifest>
